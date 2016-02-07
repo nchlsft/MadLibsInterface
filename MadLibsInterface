@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        h1 {
+    color: #009999;
+    text-align: center;
+    font-family: Arial;
+}
+
+.textfield {
+    border: 5px solid #00cc99;
+    height: auto;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    background: #009999; 
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+}
+
+p {
+    font-family: Arial;
+    
+}
+        
+    </style>    
+        
+    </head>
+    
+    <body>
+        <h1>Mad Libs by Octopi</h1>
+          <div class="textfield">
+              <form action="process.php">
+                <p>Verb: <input name="verb" type="text"></p>
+                <p>Noun: <input name="noun" type="text"></p>
+                <p>Adjective: <input name="adjective" type="text"></p>
+                <p>Number: <input name="number" type="text"></p>
+                <input type="submit">
+                <input type="reset">
+              </form>
+          </div>
+    </body>
+</html>
