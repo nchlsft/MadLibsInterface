@@ -9,18 +9,18 @@ parts = ['verbs',
        'body parts',
        'adverbs',]
 
+randomVerb = ['run', 'walk', 'swim', 'jump', 'fall']
+
 maxLength = 2
 for i in range(len(parts)):
    item = []
    for j in range(maxLength):  
        item.append(input('Type some ' + str(parts[i]) + ':'))
        if item == 'random':
-           randomVerb = ['run', 'walk', 'swim', 'jump', 'fall']
            item.append(random.choice(randomVerb))
        else:
-           randomVerb = ['run', 'walk', 'swim', 'jump', 'fall']
            item.append(random.choice(randomVerb))
-           print('Random' + str(parts[i]) + 'have been added!')
+           print('Random ' + str(parts[i]) + ' have been added!')
        print('Here\'s your list of ' + str(parts[i]) + ':')
        print(item)
    main[i] = item
